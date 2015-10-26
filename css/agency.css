@@ -10,14 +10,14 @@ body {
 }
 
 ::selection {
-  background: #ffb7b7;
+  background: #000;
   color: #fff;
  /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #ffb7b7;
-  color:#000; /* Gecko Browsers */
+  background: #000;
+  color:#fff; /* Gecko Browsers */
 }
 
 .text-muted {
@@ -84,7 +84,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 600;
-    color: #8fc448;
+    color: #f9cb36;
     background-color: #006738;
 }
 
@@ -94,7 +94,7 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     border-color: #24B573;
-    color: #8fc448;
+    color: #f9cb36;
     background-color: #24B573;
 }
 
@@ -146,7 +146,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     border-color: #24b573;
-    color: #8fc448;
+    color: #f9cb36;
     background-color: #24b573;
 }
 
@@ -195,7 +195,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #8fc448;
+    color: #f9cb36;
     font-weight: 500;
 }
 
@@ -209,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #8fc448;
+    background-color: #f9cb36;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -233,13 +233,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #8fc448;
+    color: #f9cb36;
     background-color: #24b573;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #8fc448;
+    color: #f9cb36;
     background-color: #24b573;
 }
 
@@ -278,7 +278,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/header-bg.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -424,7 +424,7 @@ section h3.section-subheading {
     margin: 0 0 0 15px;
     text-transform: none;
     float: left;
-    font-size: 26px;
+    font-size: 32px;
 }
 
 .text-muted2 {
@@ -536,7 +536,7 @@ section h3.section-subheading {
 }
 
 .quick-link:hover {
-    color:#fff;
+    color:#f9cb36;
 }
 
 aside.clients img {
