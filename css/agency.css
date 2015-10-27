@@ -521,7 +521,6 @@ section h3.section-subheading {
 
 .quick-link {
     text-decoration:underline; 
-    color:black
 }
 
 .quick-link:hover {
@@ -534,8 +533,8 @@ aside.clients img {
 }
 
 @media(max-width: 993px) {
-  .col-sm-2 {
-
+    .join {
+        display: none;
   }  
 }
 
@@ -614,6 +613,10 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
+}
+
+footer span.copyright: hover {
+    text-decoration: underline;
 }
 
 footer ul.quicklinks {
