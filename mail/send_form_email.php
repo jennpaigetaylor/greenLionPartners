@@ -1,35 +1,46 @@
 <?php
-    if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $from = 'Demo Contact Form'; 
-        $to = 'example@domain.com'; 
-        $subject = 'Message from Contact Demo ';
-        
-        $body ="From: $name\n E-Mail: $email\n Message:\n $message";
-        // Check if name has been entered
-        if (!$_POST['name']) {
-            $errName = 'Please enter your name';
-        }
-        
-        // Check if email has been entered and is valid
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errEmail = 'Please enter a valid email address';
-        }
-        
-        //Check if message has been entered
-        if (!$_POST['message']) {
-            $errMessage = 'Please enter your message';
-        }
-
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage) {
-    if (mail ($to, $subject, $body, $from)) {
-        $result='<div class="alert alert-success">Thank You! We will be in touch soon.</div>';
+$errorMSG = "";
+// NAME
+if (empty($_POST["name"])) {
+    $errorMSG = "Name is required ";
+} else {
+    $name = $_POST["name"];
+}
+// EMAIL
+if (empty($_POST["email"])) {
+    $errorMSG .= "Email is required ";
+} else {
+    $email = $_POST["email"];
+}
+// MESSAGE
+if (empty($_POST["message"])) {
+    $errorMSG .= "Message is required ";
+} else {
+    $message = $_POST["message"];
+}
+$EmailTo = "jenniferptaylor3@gmail.com";
+$Subject = "New Message Received";
+// prepare email body text
+$Body = "";
+$Body .= "Name: ";
+$Body .= $name;
+$Body .= "\n";
+$Body .= "Email: ";
+$Body .= $email;
+$Body .= "\n";
+$Body .= "Message: ";
+$Body .= $message;
+$Body .= "\n";
+// send email
+$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+// redirect to success page
+if ($success && $errorMSG == ""){
+   echo "success";
+}else{
+    if($errorMSG == ""){
+        echo "Something went wrong :(";
     } else {
-        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+        echo $errorMSG;
     }
 }
-    }
 ?>
