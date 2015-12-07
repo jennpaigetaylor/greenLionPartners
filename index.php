@@ -44,13 +44,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-<!--     created by jenna paige taylor, jennapt.com, reach out if you're an owl too
-,___, 
-[O.o] 
-/)__) 
--"-"-
- -->
-
 </head>
 
 <body id="page-top" class="index">
@@ -292,24 +285,24 @@
                 <div class="col-lg-12 text-center">
                     <!-- <form name="sentMessage" id="contactForm" novalidate> -->
                     <form action="MAILTO:contact@greenlionpartners.com" method="post" enctype="text/plain">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
+                 <!--        <div class="row"> -->
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
+      <!--                   </div>
+                        <div class="row"> -->
+                            <div class="col-md-4 6">
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
+   <!--                      </div>
+                        <div class="row"> -->
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
