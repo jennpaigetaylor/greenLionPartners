@@ -277,7 +277,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 180px;
+    padding-top: 200px;
     padding-bottom: 50px;
 }
 
@@ -300,8 +300,8 @@ header .intro-text .intro-heading {
 }
 
 div.col-xs-12.col-md-8 {
-    padding-top: 65px; 
-    font-size: 40px; 
+    padding-top: 115px; 
+    font-size: 35px; 
     color: #036f3e; 
     font-weight: 800; 
     font-style: italic; 
@@ -564,7 +564,7 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 150px;
 }
 
 section#contact .form-control:focus {
